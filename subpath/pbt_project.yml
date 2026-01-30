@@ -41,10 +41,11 @@ sqlModels:
   .prophecy/metadata/sqlmodels/newmodel:
     name: newmodel
     schema: null
-    description: desc model
+    description: null
     author: 8hgaejmg.izrgnp2q@zzeywn6w.com
     files:
     - subpath/newmodel.sql
+    - newmodel.yml
     sqlDependencies:
       models: []
       datasets: []
@@ -82,7 +83,7 @@ sqlTests:
     author: 8hgaejmg.izrgnp2q@zzeywn6w.com
     files:
     - test2.sql
-    - .prophecy/sqltests/test2.json
+    - .prophecy/sqltests/test2-renamed.json
     testType: SingularDataTest
     createdAt: '2026-01-30 15:53:23'
 sqlMacros:
@@ -94,6 +95,14 @@ sqlMacros:
     files:
     - sources.yml
     createdAt: '2026-01-30 15:53:23'
+  .prophecy/metadata/sqlmacros/macro2:
+    name: macro2
+    macroType: macro2
+    description: null
+    author: 8hgaejmg.izrgnp2q@zzeywn6w.com
+    files:
+    - sources.yml
+    createdAt: '2026-01-30 15:53:24'
 sqlSeeds:
   .prophecy/metadata/sqlseeds/seed1:
     name: seed1
@@ -103,22 +112,21 @@ sqlSeeds:
     files:
     - sources.yml
     createdAt: '2026-01-30 15:53:23'
-sqlSources:
-  .prophecy/metadata/sqlsources/source:
-    name: source
-    description: source desc
+  .prophecy/metadata/sqlseeds/seed2:
+    name: seed2
+    schema: null
+    description: null
     author: 8hgaejmg.izrgnp2q@zzeywn6w.com
     files:
-    - sources.yml
-    createdAt: '2026-01-30 15:53:23'
-    tables: []
+    - seed2.sql
+    createdAt: '2026-01-30 15:53:24'
+sqlSources:
   .prophecy/metadata/sqlsources/multipleFileSource:
     name: multipleFileSource
     description: multipleFileSource desc
     author: 8hgaejmg.izrgnp2q@zzeywn6w.com
     files:
     - sources1.yml
-    - mfs/src/multipleFileSource.yml
     createdAt: '2026-01-30 15:53:23'
     tables:
     - name: table1
@@ -126,6 +134,14 @@ sqlSources:
       description: descr 1
       author: 8hgaejmg.izrgnp2q@zzeywn6w.com
       createdAt: '2026-01-30 15:53:23'
+  .prophecy/metadata/sqlsources/source2:
+    name: source2
+    description: null
+    author: 8hgaejmg.izrgnp2q@zzeywn6w.com
+    files:
+    - sources.yml
+    createdAt: '2026-01-30 15:53:24'
+    tables: []
 sqlUnreferencedSources: {}
 sqlPipeline:
   name: sqlPipeline
