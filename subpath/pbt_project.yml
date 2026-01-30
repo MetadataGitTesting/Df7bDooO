@@ -1,0 +1,167 @@
+name: milford.lesch
+description: Diverse
+version: 0.0.1
+author: 8hgaejmg.izrgnp2q@zzeywn6w.com
+language: sql
+buildSystem: ''
+buildSystemDetails: null
+pipelines: {}
+datasets: {}
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: ''
+  gemLibsVersion: ''
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2026-01-30 15:53:21'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/model:
+    name: model
+    schema: null
+    description: model desc
+    author: 8hgaejmg.izrgnp2q@zzeywn6w.com
+    files:
+    - model.sql
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2026-01-30 15:53:23'
+  .prophecy/metadata/sqlmodels/newmodel:
+    name: newmodel
+    schema: null
+    description: desc model
+    author: 8hgaejmg.izrgnp2q@zzeywn6w.com
+    files:
+    - subpath/newmodel.sql
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2026-01-30 15:53:23'
+sqlSnapshots:
+  .prophecy/metadata/sqlsnapshots/snapshot:
+    name: snapshot
+    schema: null
+    description: null
+    author: 8hgaejmg.izrgnp2q@zzeywn6w.com
+    files:
+    - snap.sql
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2026-01-30 15:53:23'
+sqlTests:
+  .prophecy/metadata/sqltests/test1:
+    name: test1
+    description: null
+    author: 8hgaejmg.izrgnp2q@zzeywn6w.com
+    files:
+    - test1.sql
+    testType: SingularDataTest
+    createdAt: '2026-01-30 15:53:23'
+  .prophecy/metadata/sqltests/test2:
+    name: test2
+    description: null
+    author: 8hgaejmg.izrgnp2q@zzeywn6w.com
+    files:
+    - test2.sql
+    - .prophecy/sqltests/test2.json
+    testType: SingularDataTest
+    createdAt: '2026-01-30 15:53:23'
+sqlMacros:
+  .prophecy/metadata/sqlmacros/macro:
+    name: macro
+    macroType: macro
+    description: macro desc
+    author: 8hgaejmg.izrgnp2q@zzeywn6w.com
+    files:
+    - sources.yml
+    createdAt: '2026-01-30 15:53:23'
+sqlSeeds:
+  .prophecy/metadata/sqlseeds/seed1:
+    name: seed1
+    schema: null
+    description: seed desc
+    author: 8hgaejmg.izrgnp2q@zzeywn6w.com
+    files:
+    - sources.yml
+    createdAt: '2026-01-30 15:53:23'
+sqlSources:
+  .prophecy/metadata/sqlsources/source:
+    name: source
+    description: source desc
+    author: 8hgaejmg.izrgnp2q@zzeywn6w.com
+    files:
+    - sources.yml
+    createdAt: '2026-01-30 15:53:23'
+    tables: []
+  .prophecy/metadata/sqlsources/multipleFileSource:
+    name: multipleFileSource
+    description: multipleFileSource desc
+    author: 8hgaejmg.izrgnp2q@zzeywn6w.com
+    files:
+    - sources1.yml
+    - mfs/src/multipleFileSource.yml
+    createdAt: '2026-01-30 15:53:23'
+    tables:
+    - name: table1
+      schema: null
+      description: descr 1
+      author: 8hgaejmg.izrgnp2q@zzeywn6w.com
+      createdAt: '2026-01-30 15:53:23'
+sqlUnreferencedSources: {}
+sqlPipeline:
+  name: sqlPipeline
+  description: null
+  author: 8hgaejmg.izrgnp2q@zzeywn6w.com
+  createdAt: '2026-01-30 15:53:21'
+dependencies: []
+projectDependencies: {}
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}
+projectConfigurations: {}
+sqlOrchestratorPipelines:
+  .prophecy/metadata/sqlorchestratorpipeline/orchestrationPipeline:
+    name: orchestrationPipeline
+    schema: null
+    description: null
+    author: 8hgaejmg.izrgnp2q@zzeywn6w.com
+    files:
+    - orchestrationPipeline.sql
+    createdAt: '2026-01-30 15:53:23'
+sqlBusinessApps:
+  .prophecy/metadata/sqlbusinessapp/businessApp1:
+    name: businessApp1
+    schema: null
+    description: null
+    author: 8hgaejmg.izrgnp2q@zzeywn6w.com
+    files:
+    - businessApp1.json
+    createdAt: '2026-01-30 15:53:23'
+    sqlOrchestrationPipelineName: orchestrationPipeline
+sqlStoredProcedures:
+  .prophecy/metadata/sqlstoredprocedure/test_storedProcEntity1:
+    name: test.storedProcEntity1
+    description: null
+    author: 8hgaejmg.izrgnp2q@zzeywn6w.com
+    files:
+    - storedProcEntity1.sql
+    createdAt: '2026-01-30 15:53:23'
